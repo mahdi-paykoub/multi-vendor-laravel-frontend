@@ -1,0 +1,28 @@
+body {
+    height: 7000px;
+}
+
+.bg-amazing-img-background {
+    background: url("../image/text/amazing-text-img.svg") no-repeat #ef394e;
+    background-position-x: center;
+    background-size: contain;
+    height: 64px;
+}
+
+.amazing-absolute-pos {
+    top: 0;
+    right: 7px
+}
+
+.relative-products-parent .swiper-slide img {
+    width: 90%;
+}
+
+.related-products-swiper .swiper-slide {
+    border-left: 1px solid rgba(233, 233, 233, 0.70);
+}
+
+.h4px {
+    height: 4px;
+}
+

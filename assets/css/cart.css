@@ -1,0 +1,12 @@
+.active-cart-menu {
+    color: #ef4056 !important;
+    font-weight: 600;
+}
+
+.color-box-cart{
+    width: 20px;
+    height: 20px;
+}
+.register-order-btn{
+    padding:13px 0;
+}

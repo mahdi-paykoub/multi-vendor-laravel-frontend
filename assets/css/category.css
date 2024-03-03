@@ -1,0 +1,7 @@
+body{
+    height: 7000px;
+}
+.bg-sport-category{
+    background: linear-gradient(to top ,#2babc4 , #1693c0);
+    border-left: 2px solid #1693c0 !important;
+}

@@ -1,0 +1,40 @@
+.bg-image-most-sell:before{
+    content: "";
+    background-image: url(../image/text/most-sell-header.svg);
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    opacity: 25%;
+    background-position: 50%;
+}
+.most-sell-banner{
+    height: 130px;
+}
+.line-most-sell{
+    width: 360px;
+    background: linear-gradient(90deg,#e6123d,hsla(0,0%,100%,0));
+    height: 2px;
+}
+.line-most-sell.left1{
+  transform:rotate(180deg);
+}
+.most-sell-tags{
+    border: 1px solid #e0e0e2;
+    padding: 9px 17px;
+    border-radius: 30px;
+}
+.active-most-sell-tags{
+    border:1px solid #e6123d !important;
+    background: #e053530d;
+}
+.active-most-sell-tags a{
+    color: #ef4056 !important;
+}
+.counter-number-most-sell{
+    border-radius: 7px 0 0 7px;
+    background: #19bfd3;
+    padding: 2px 8px 2px 13px;
+}
+.shadow-hover:hover {
+    box-shadow: 0px 0px 10px #b6b6b6 !important;
+}

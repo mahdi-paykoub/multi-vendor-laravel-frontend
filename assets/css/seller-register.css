@@ -1,0 +1,64 @@
+.phone-number-inp {
+    border: 1px solid #cecece;
+    height: 47px;
+}
+
+.phone-number-inp:focus {
+    border-color: #1e9958 !important;
+}
+
+.confirm-btn {
+    background: #1ab1d4;
+    padding: 13px 60px;
+}
+
+.btn-for-seller-type {
+    background: #1ab1d4;
+    padding: 14px 19px;
+}
+
+.form-check-input:checked {
+    background-color: #5ea1ff;
+    border-color: #5ea1ff;
+}
+
+.right-progress-menu {
+    background-color: #fcfeff;
+   /* border-left: 1px solid #efefef;
+    height: 100vh;*/
+}
+
+.icon-p-shape {
+    background: #c0c2c5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-active {
+    background: #4ccbe9 !important;
+}
+
+.subset-of-progress-menu {
+    padding: 13px;
+    border-right: 2px solid #dadada;
+    margin-right: 20px;
+    color: #828282;
+}
+
+.sub-active {
+    border-right: 2px solid #4ccbe9 !important;
+    color: #2e2e2e;
+    background: #d7f1f8;
+    font-weight: 600;
+}
+.mobile-p-shapes{
+    width: 28px;
+    height: 28px;
+}
+.seller-address-map{
+    height: 400px;
+}

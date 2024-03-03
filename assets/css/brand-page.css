@@ -1,0 +1,19 @@
+.bg-brand-banner {
+    background-image: url(../image/text/5e4d4bb72163e71ee1bd0c0c3b3a3bedca61230c_1690695689.jpg);
+    height: 170px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+.brand-content-banner-img{
+    border-radius: 0 15px 15px 0;
+    height: 550px;
+}
+.brand-content-banner-img-2{
+    border-radius: 15px 0 0 15px;
+    height: 550px;
+}
+.relative-products-parent .swiper-slide img {
+    width: 90%;
+}

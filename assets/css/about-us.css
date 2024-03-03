@@ -1,0 +1,54 @@
+.about-us-landing img {
+    height: 95vh;
+}
+
+.about-us-landing .about-overly {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(180deg, transparent 30.05%, #000 94.14%);
+    mix-blend-mode: multiply;
+}
+
+.about-landing-text {
+    z-index: 200;
+    bottom: 0;
+    right: 0;
+}
+
+.about-landing-text .main-text {
+    font-size: 35px;
+    border-left: 1px solid white;
+}
+
+.about-us-pagination-parent .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.about-us-pagination-parent .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #eaeaea !important;
+}
+
+.about-us-pagination-parent .swiper-pagination {
+    right: 40px;
+}
+
+.swiper-next-prev-parent{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.swiper-next-prev-parent svg{
+    width: 18px;
+    height: 15px;
+}
+.swiper-next-prev-parent svg.righside{
+    transform: rotate(180deg);
+    right: -70px;
+}
+.border-white-swiper-about{
+    border-bottom: 1px solid white;
+}

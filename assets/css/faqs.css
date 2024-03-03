@@ -1,0 +1,30 @@
+.faqs-landing-parent {
+    background: linear-gradient(180deg, #e0e0e2, hsla(0, 0%, 100%, 0));
+}
+
+.img-for-faqs-header {
+    background: url("../image/text/faqs-header.svg") top no-repeat;
+    height: 50vh;
+    width: 100%;
+    background-size: contain;
+}
+
+.faq-header-question-mark {
+    width: 55px;
+    height: 55px;
+}
+.faq-header-question-mark.f-cat-co{
+   background: #f3fbfc;
+}
+
+.faq-search-inp {
+    border: 1px solid #bebebe;
+    height: 45px;
+}
+.faq-search-inp::placeholder{
+    color: #a0a0a0;
+    font-size: 14px;
+}
+.faq-search-inp:focus{
+    border: 1px solid #19bfd3 !important;
+}

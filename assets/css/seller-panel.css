@@ -1,0 +1,191 @@
+body {
+    background: #f5f7fa;
+/*    height: 7000px;*/
+}
+
+.panel-info-box {
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, .05);
+}
+
+.circle-sign::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -38px;
+    width: 28px;
+    height: 28px;
+    border: 6px solid #f2eee6;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sign-red::before {
+    background-color: #ef5661;
+}
+
+.sign-yellow::before {
+    background-color: #fdc364;
+}
+
+.add-new-product-btn {
+    background-color: #4fcce9;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(79, 193, 233, .3);
+    box-shadow: 0 6px 12px 0 rgba(79, 193, 233, .3);
+    padding: 12px 13px;
+}
+
+.pay-status-btn {
+    background-color: #ef5661;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(239, 86, 97, .2);
+    box-shadow: 0 6px 12px 0 rgba(239, 86, 97, .2);
+    padding: 12px 13px;
+}
+
+.wallet-box {
+    border-radius: 8px;
+    border: 1px solid rgba(79, 204, 233, .2);
+    background-color: rgba(79, 204, 233, .05);
+}
+
+.detail-wallet-btn {
+    background-color: #4fcce9;
+    color: #fff;
+    padding: 11px 22px;
+    box-shadow: 0 6px 12px 0 rgba(79, 204, 233, .2);
+}
+
+.seller-panel-footer {
+    background-color: #6d717a;
+}
+
+.seller-panel-footer-2 {
+    background: #646870;
+}
+
+.seller-search-inp {
+    height: 40px;
+    border-radius: 4px;
+    transition: all .5s;
+}
+
+.seller-search-inp::placeholder {
+    font-size: 14px;
+    color: #ababab;
+}
+
+.search-seller-btn {
+    color: #606265;
+    background-color: #f9fafc;
+    border: 1px solid #e6eaef;
+    height: 40px;
+    opacity: .6;
+}
+
+.seller-search-inp:focus {
+    border-color: #13d7e8 !important;
+}
+
+.re-reg-new-pr-btn {
+    color: #4a90e2;
+    border-bottom: 1px dashed #4a90e2;
+}
+
+.c-border-b {
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.you-also-sell-btn {
+    border: 1px solid #e6eaef;
+    background-color: #f9fafc;
+    color: #606265;
+    padding: 11px 24px;
+    border-radius: 7px;
+    transition: all .2s;
+}
+
+.pr-b-info {
+    background: #f9fafc;
+}
+
+.on-hover-act-btns:hover .you-also-sell-btn {
+    background-color: #4fcce9;
+    border-color: #4fcce9;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(79, 193, 233, .3);
+    box-shadow: 0 6px 12px 0 rgba(79, 193, 233, .3);
+    color: white !important;
+}
+
+.on-hover-act-btns:hover .text-hover-dashed {
+
+    color: #4a90e2 !important;
+    text-decoration: none;
+    border-bottom: 1px dashed #4a90e2 !important;
+
+}
+
+.pagination li a {
+    border: none !important;
+}
+
+.seller-find-pr-pa a {
+    color: #ababab;
+}
+
+.seller-find-pr-pa li {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.page-item.active a {
+    border: 1px solid #4fcce9 !important;
+    background-color: #4fcce9 !important;
+    -webkit-box-shadow: 0 6px 12px 0 rgba(79, 204, 233, .3);
+    box-shadow: 0 6px 12px 0 rgba(79, 204, 233, .3);
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.seller-find-pr-pa .page-link:hover,
+.seller-find-pr-pa .page-link:focus {
+    background: transparent;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    background-color: #4fcce9;
+    border-color: #4fcce9;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.seller-pr-brands-p {
+    max-height: 350px;
+    overflow-y: scroll
+}
+
+.seller-pr-brands-p::-webkit-scrollbar {
+    width: 15px;
+}
+
+.seller-pr-brands-p::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.seller-pr-brands-p::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.seller-pr-brands-p::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+.seller-panel-menu .dropdown-toggle::after{
+    vertical-align: 1px;
+    margin-right: 6px;
+}

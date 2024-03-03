@@ -1,0 +1,25 @@
+body {
+    background: #f5f7fa;
+}
+
+.add-logo-btn-box {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #1ab1d4;
+}
+.add-logo-btn-box svg{
+    color: #1ab1d4;
+}
+.right-menu-box-p > div:not(:last-child){
+    border-bottom: 1px solid #efefef;
+}
+.border-bottom-menu-bar{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 15px;
+}
+.border-bottom-menu-bar.active{
+    border-right:2px solid #1ab1d4 ;
+    color: #1ab1d4;
+    font-weight: 600;
+}

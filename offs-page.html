@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--bootstrap 5-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!--style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/offs-page.css">
+</head>
+<body>
+
+<header>
+    <!--top bar-->
+    <div class="w-100 top-bar-parent d-none d-lg-block">
+        <a href="">
+            <img src="assets/image/banner/5289903980aa08bd6ede73f63c9cd7f25aa879e3_1693601091.webp" class="object-cover"
+                 width="100%" alt="">
+        </a>
+    </div>
+    <!--nav bar-->
+    <div class="custom-nav-bar-container mx-auto nav-bar-parent mt-2 pt-1 px-lg-4 px-2">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex search-input-width align-items-center">
+                <div class="d-none d-lg-block">
+                    <img src="assets/image/logo/logo.svg" width="115" height="30" alt="">
+                </div>
+                <div class="main-search-inp-parent me-lg-3 d-flex align-items-center br7">
+                    <div class="px-3">
+                        <svg stroke="currentColor" fill="#9e9fb1" stroke-width="0" viewBox="0 0 24 24" height="23"
+                             width="23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
+                        </svg>
+                    </div>
+                    <input type="text" class="main-search-inp w-100 h-100 ps-3" placeholder="جستجو">
+                </div>
+            </div>
+            <div class="align-items-center d-none d-lg-flex">
+                <a href="" class="ms-3">
+                    <button class="login-nav-bar-btn br7 icon-dark-color fs12 bg-transparent border fw600">
+                        <svg stroke="currentColor" class="icon-dark-color ms-1" fill="none" stroke-width="2"
+                             viewBox="0 0 24 24" aria-hidden="true" height="24" width="24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                        </svg>
+                        ورود | ثبت‌نام
+                    </button>
+                </a>
+                <a href="" class="border-end pe-4">
+                    <svg stroke="currentColor" fill="#3f4064" stroke-width="0" viewBox="0 0 256 256" height="24"
+                         width="24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100,216a20,20,0,1,1-20-20A20,20,0,0,1,100,216Zm84-20a20,20,0,1,0,20,20A20,20,0,0,0,184,196ZM235.47,75.53l-27.29,88.7A27.87,27.87,0,0,1,181.41,184H82.93A28.13,28.13,0,0,1,56,163.69L21.81,44H12a12,12,0,0,1,0-24H24.82A20.08,20.08,0,0,1,44.05,34.51L51.34,60H224a12,12,0,0,1,11.47,15.53ZM207.75,84H58.19l20.89,73.1a4,4,0,0,0,3.85,2.9h98.48a4,4,0,0,0,3.83-2.82Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--main menu-->
+    <nav class="mt-3 pt-1 d-flex justify-content-between position-relative">
+        <!--right menu-->
+        <div class="d-flex px-3 align-items-center">
+            <div class="main-menu-category-item py-2 border-bottom-hover-red">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true"
+                     height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clip-rule="evenodd"></path>
+                </svg>
+                <span class="fs13 fw600 icon-dark-color cursor-pointer border-start ps-3">دسته بندی ها</span>
+            </div>
+            <!--menu hover-->
+            <div class="position-absolute bg-white menu-hovered">
+                <div class="col-2 bg-main-left-menu h-100">
+                    <div class="inner-menu-hover-able">
+                        <svg stroke="currentColor" class="icon-dark-color" fill="currentColor" stroke-width="0"
+                             viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.75 2h-10c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm-10 18V4h10l.002 16H6.75z"></path>
+                            <circle cx="11.75" cy="18" r="1"></circle>
+                        </svg>
+                        <span class="fs13 icon-dark-color">موبایل</span>
+                        <div class="position-absolute px-3 display-none">
+                            <div class="row w-100">
+                                <div class="text-info fs13 mt-4 fw600">
+                                    همه محصولات موبایل
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                         height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                    </svg>
+                                </div>
+
+                                <!--sub categories-->
+                                <div class="row mt-4">
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mt-4">
+                                            <div class="fs13 fw-bold icon-dark-color main-menu-border-right-red pe-2">
+                                                لوازم جانبی گوشی
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                     viewBox="0 0 24 24" height="1em" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">ایکس ویژن </a>
+                                                </div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    سامسونگ</a></div>
+                                                <div class="fs12 my-3"><a href="" class="text-secondary">گوشی
+                                                    شیائومی</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-flex main-nav-menu">
+                <div class="mx-3 py-2 border-bottom-hover-red">
+                    <a href="">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                             stroke-linecap="round" stroke-linejoin="round" height="18" width="18"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 15l6 -6"></path>
+                            <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                            <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                            <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                        </svg>
+                        <span class="fs12">شگفت انگیزها</span>
+                    </a>
+                </div>
+                <div class="mx-3 py-2 border-bottom-hover-red">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 15l6 -6"></path>
+                        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                        <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                    </svg>
+                    <span class="fs12">سوپرمارکتی</span>
+                </div>
+                <div class="mx-3 py-2 border-bottom-hover-red">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 15l6 -6"></path>
+                        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                        <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                    </svg>
+                    <span class="fs12">پرفروش ترین</span>
+                </div>
+                <div class="mx-3 py-2 border-bottom-hover-red">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 15l6 -6"></path>
+                        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                        <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                    </svg>
+                    <span class="fs12">کارت هدیه</span>
+                </div>
+                <!--last index class (border-bottom-hover-red & ps-3)-->
+                <div class="mx-3 py-2 border-bottom-hover-red">
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 15l6 -6"></path>
+                        <circle cx="9.5" cy="9.5" r=".5" fill="currentColor"></circle>
+                        <circle cx="14.5" cy="14.5" r=".5" fill="currentColor"></circle>
+                        <path d="M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1"></path>
+                    </svg>
+                    <span class="fs12 border-start ps-3">تخفیف ها و پیشنهادات</span>
+                </div>
+            </div>
+            <div class="fs12 main-nav-menu">
+                <a href="">
+                    <span class="ms-3">سوالی دارید؟</span>
+                </a>
+                <a href="">
+                    <span>در دیجی‌کالا بفروشید!</span>
+                </a>
+            </div>
+        </div>
+        <!--left location-->
+        <div class="ms-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="border-0 fs12 icon-dark-color bg-transparent" data-toggle="modal"
+                    data-target="#exampleModalCenter">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="18"
+                     width="18" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke-width="2"
+                          d="M12,22 C12,22 4,16 4,10 C4,5 8,2 12,2 C16,2 20,5 20,10 C20,16 12,22 12,22 Z M12,13 C13.657,13 15,11.657 15,10 C15,8.343 13.657,7 12,7 C10.343,7 9,8.343 9,10 C9,11.657 10.343,13 12,13 L12,13 Z"></path>
+                </svg>
+                <span class="me-2">لطفا شهر خود را انتخاب کنید</span>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            asxasxasxasxasxasx
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="bg-offs-banner">
+    <div class="d-flex justify-content-center fs30 text-white fw600 w-100">
+        <img src="assets/image/text/promotion-page-header-image.webp" class="position-absolute" width="175" alt="">
+        <img src="assets/image/text/offs-text.svg" class="position-relative pt-5" width="300" alt="">
+    </div>
+</div>
+
+<div class="container px-4 position-relative -mt-80">
+    <div class="row border bg-white br15">
+        <div class="col-12 col-xxl-3 border-left-light shadow-hover border-bottom-light-2 py-4">
+            <div class="position-relative text-center">
+                <img src="assets/image/product/172c57c8866dfa69d2323f829af02b08b9edbffb_1653385757.webp" class="mt-3"
+                     width="240" height="240" alt="">
+                <img src="assets/image/text/amazing-img-absoloute.svg"
+                     class="top-0 right-0 position-absolute object-contain" width="116" height="14" alt="">
+            </div>
+            <div class="mt-4 fs12 icon-dark-color fw600">
+                هدست مخصوص بازی تسکو مدل TH 5127
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <svg stroke="currentColor" class="text-digi-red" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <span class="fs12 text-secondary">ارسال امروز</span>
+                </div>
+            </div>
+            <div class="fw600 mt-4 pt-2 icon-dark-color justify-content-between d-flex px-2">
+                <div class="text-white bg-digi-red br10 discount-badge fs12">۵٪</div>
+                <div>
+                    <span>۱۴,۵۵۰,۰۰۰</span>
+                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <div class="mt-2 pb-2 text-decoration-line-through ps-1 text-secondary-light fs12">
+                        ۱۴,۵۵۰,۰۰۰
+                    </div>
+                </div>
+            </div>
+            <div class="text-digi-red fs13 px-2 mt-3 fw600 d-flex justify-content-end">۵۶ : ۰۱ : ۱۳</div>
+        </div>
+        <div class="col-12 col-xxl-3 border-left-light shadow-hover border-bottom-light-2 py-4">
+            <div class="position-relative text-center">
+                <img src="assets/image/product/172c57c8866dfa69d2323f829af02b08b9edbffb_1653385757.webp" class="mt-3"
+                     width="240" height="240" alt="">
+                <img src="assets/image/text/amazing-img-absoloute.svg"
+                     class="top-0 right-0 position-absolute object-contain" width="116" height="14" alt="">
+            </div>
+            <div class="mt-4 fs12 icon-dark-color fw600">
+                هدست مخصوص بازی تسکو مدل TH 5127
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <svg stroke="currentColor" class="text-digi-red" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <span class="fs12 text-secondary">ارسال امروز</span>
+                </div>
+            </div>
+            <div class="fw600 mt-4 pt-2 icon-dark-color justify-content-between d-flex px-2">
+                <div class="text-white bg-digi-red br10 discount-badge fs12">۵٪</div>
+                <div>
+                    <span>۱۴,۵۵۰,۰۰۰</span>
+                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <div class="mt-2 pb-2 text-decoration-line-through ps-1 text-secondary-light fs12">
+                        ۱۴,۵۵۰,۰۰۰
+                    </div>
+                </div>
+            </div>
+            <div class="text-digi-red fs13 px-2 mt-3 fw600 d-flex justify-content-end">۵۶ : ۰۱ : ۱۳</div>
+        </div>
+        <div class="col-12 col-xxl-3 border-left-light shadow-hover border-bottom-light-2 py-4">
+            <div class="position-relative text-center">
+                <img src="assets/image/product/172c57c8866dfa69d2323f829af02b08b9edbffb_1653385757.webp" class="mt-3"
+                     width="240" height="240" alt="">
+                <img src="assets/image/text/amazing-img-absoloute.svg"
+                     class="top-0 right-0 position-absolute object-contain" width="116" height="14" alt="">
+            </div>
+            <div class="mt-4 fs12 icon-dark-color fw600">
+                هدست مخصوص بازی تسکو مدل TH 5127
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <svg stroke="currentColor" class="text-digi-red" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <span class="fs12 text-secondary">ارسال امروز</span>
+                </div>
+            </div>
+            <div class="fw600 mt-4 pt-2 icon-dark-color justify-content-between d-flex px-2">
+                <div class="text-white bg-digi-red br10 discount-badge fs12">۵٪</div>
+                <div>
+                    <span>۱۴,۵۵۰,۰۰۰</span>
+                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <div class="mt-2 pb-2 text-decoration-line-through ps-1 text-secondary-light fs12">
+                        ۱۴,۵۵۰,۰۰۰
+                    </div>
+                </div>
+            </div>
+            <div class="text-digi-red fs13 px-2 mt-3 fw600 d-flex justify-content-end">۵۶ : ۰۱ : ۱۳</div>
+        </div>
+        <div class="col-12 col-xxl-3 border-left-light shadow-hover border-bottom-light-2 py-4">
+            <div class="position-relative text-center">
+                <img src="assets/image/product/172c57c8866dfa69d2323f829af02b08b9edbffb_1653385757.webp" class="mt-3"
+                     width="240" height="240" alt="">
+                <img src="assets/image/text/amazing-img-absoloute.svg"
+                     class="top-0 right-0 position-absolute object-contain" width="116" height="14" alt="">
+            </div>
+            <div class="mt-4 fs12 icon-dark-color fw600">
+                هدست مخصوص بازی تسکو مدل TH 5127
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <svg stroke="currentColor" class="text-digi-red" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <span class="fs12 text-secondary">ارسال امروز</span>
+                </div>
+            </div>
+            <div class="fw600 mt-4 pt-2 icon-dark-color justify-content-between d-flex px-2">
+                <div class="text-white bg-digi-red br10 discount-badge fs12">۵٪</div>
+                <div>
+                    <span>۱۴,۵۵۰,۰۰۰</span>
+                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <div class="mt-2 pb-2 text-decoration-line-through ps-1 text-secondary-light fs12">
+                        ۱۴,۵۵۰,۰۰۰
+                    </div>
+                </div>
+            </div>
+            <div class="text-digi-red fs13 px-2 mt-3 fw600 d-flex justify-content-end">۵۶ : ۰۱ : ۱۳</div>
+        </div>
+        <div class="col-12 col-xxl-3 border-left-light shadow-hover border-bottom-light-2 py-4">
+            <div class="position-relative text-center">
+                <img src="assets/image/product/172c57c8866dfa69d2323f829af02b08b9edbffb_1653385757.webp" class="mt-3"
+                     width="240" height="240" alt="">
+                <img src="assets/image/text/amazing-img-absoloute.svg"
+                     class="top-0 right-0 position-absolute object-contain" width="116" height="14" alt="">
+            </div>
+            <div class="mt-4 fs12 icon-dark-color fw600">
+                هدست مخصوص بازی تسکو مدل TH 5127
+            </div>
+            <div class="d-flex justify-content-between mt-4">
+                <div>
+                    <svg stroke="currentColor" class="text-digi-red" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <span class="fs12 text-secondary">ارسال امروز</span>
+                </div>
+            </div>
+            <div class="fw600 mt-4 pt-2 icon-dark-color justify-content-between d-flex px-2">
+                <div class="text-white bg-digi-red br10 discount-badge fs12">۵٪</div>
+                <div>
+                    <span>۱۴,۵۵۰,۰۰۰</span>
+                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                              fill="currentColor"></path>
+                    </svg>
+                    <div class="mt-2 pb-2 text-decoration-line-through ps-1 text-secondary-light fs12">
+                        ۱۴,۵۵۰,۰۰۰
+                    </div>
+                </div>
+            </div>
+            <div class="text-digi-red fs13 px-2 mt-3 fw600 d-flex justify-content-end">۵۶ : ۰۱ : ۱۳</div>
+        </div>
+    </div>
+</div>
+<div class="container px-4">
+    <div class="row amazing-product-parent br15 mt-3 mt-md-4 align-items-center">
+        <div class="col-12 col-lg-5">
+            <div class="d-flex align-items-center">
+                <a href="">
+                    <div class="d-flex">
+                        <img src="assets/image/text/box1.webp" class="amazing-product-img object-contain" alt="">
+                        <img src="assets/image/text/amazing.svg" alt="" class="me-2 amazing-product-img-text">
+                    </div>
+                </a>
+                <div class="bg-digi-green fs14 text-white amazing-discount-badge d-none d-xl-block me-3">
+                    تا ۴۵٪ تخفیف
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-7 px-0 bg-amazing">
+            <div class="d-flex align-items-center justify-content-lg-end mt-3 mt-lg-0">
+                <div class="amazing-products position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+                <div class="amazing-products position-relative mx-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+                <div class="amazing-products position-relative mx-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+                <div class="amazing-products position-relative mx-1 d-none d-md-flex bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+                <div class="amazing-products position-relative d-none d-xl-flex mx-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+                <div class="amazing-products position-relative d-none d-xl-flex mx-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                    <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                         class="rounded-circle object-cover" alt="">
+                    <div class="position-absolute amazing-discount bg-digi-red fs12 text-white px-2 fw600">۲۴٪</div>
+                </div>
+
+                <a href="" class="me-auto ms-3 mx-lg-3">
+                    <button class="fs12 amazing-all-btn fw600 bg-white border-0 text-digi-green d-none d-md-block">
+                        <span class="ms-1"> بیش از 100 کالا</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                             height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path>
+                        </svg>
+                    </button>
+                    <button class="fs12 amazing-all-btn p-3 rounded-circle bg-white border-0 text-digi-green d-md-none">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                             height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"></path>
+                        </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 px-4">
+    <div class="mb-4 text-center fw600 icon-dark-color">
+        پیشنهاد‌های ویژه امروز
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class=" br15 p-3" style="background: linear-gradient(270deg,#ffebed 2.1%,#f0f0f1);">
+                <div class="row">
+                    <div class="col-4">
+                        <div>
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19.5 12.572l-3 2.928m-5.5 3.5a8916.99 8916.99 0 0 0 -6.5 -6.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                                <path d="M15 19l2 2l4 -4"></path>
+                            </svg>
+                            <span class="fs12 text-secondary">سلامت و زیبایی</span>
+                        </div>
+                        <div class="mt-2 fs15 fw600 icon-dark-color">
+                            عطر و ادکلن
+                        </div>
+                        <div class="mt-4 offs-less-box fs12 text-white bg-digi-red w-fit fw600">
+                            کمتر از ۹۹ هزار تومان
+                        </div>
+
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex h-100 align-items-center justify-content-lg-end mt-3 mt-lg-0">
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <a href="">
+                                    <svg stroke="currentColor" class="icon-dark-color" fill="currentColor"
+                                         stroke-width="0" viewBox="0 0 16 16"
+                                         height="35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class=" br15 p-3" style="background: linear-gradient(270deg,#defaff 2.1%,#f0f0f1);">
+                <div class="row">
+                    <div class="col-4">
+                        <div>
+                            <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                 stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12h.01"></path>
+                                <path d="M15 12h.01"></path>
+                                <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"></path>
+                                <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path>
+                            </svg>
+                            <span class="fs12 text-secondary">سلامت و زیبایی</span>
+                        </div>
+                        <div class="mt-2 fs15 fw600 icon-dark-color">
+                            اسباب بازی
+                        </div>
+                        <div class="mt-4 offs-less-box fs12 text-white bg-info w-fit fw600">
+                            کمتر از ۹۹ هزار تومان
+                        </div>
+
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex h-100 align-items-center justify-content-lg-end mt-3 mt-lg-0">
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <img src="assets/image/product/8a24458523e54b6bca1dbe5337652122c365e067_1674033576.webp"
+                                     width="48" height="48" class="rounded-circle object-cover" alt="">
+                            </div>
+                            <div class="amazing-products-2 position-relative me-4 me-lg-1 ms-1 bg-white rounded-circle justify-content-center align-items-center d-flex">
+                                <a href="">
+                                    <svg stroke="currentColor" class="icon-dark-color" fill="currentColor"
+                                         stroke-width="0" viewBox="0 0 16 16"
+                                         height="35" width="35" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                              d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container px-4 mt-4">
+    <div class="offs-new-box br15 px-3 py-1">
+        <div class="row ">
+            <div class="col-6">
+                <div class="fw600 fw14 text-digi-red mt-4 pt-3">
+                    ۱۰ درصد تخفیف برای کالاهای ابزار سلامت دیجیتال تا سقف ۱۰ هزار تومان
+                </div>
+                <div class="mt-3 fs12 mt-2">
+                    کد تخفیف را در سبد خرید وارد کنید
+                </div>
+                <div class="mt-4 offs-less-box fs13 text-white bg-digi-red w-fit fw600">
+                    PA10
+                </div>
+                <div class="mt-4">
+                    <a href="" class="text-digi-red fs15 fw600">
+                        مشاهده کالا
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                             width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 bg-white br15">
+                <div class="row py-3">
+                    <div class="col-3 border-left-light">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3 border-left-light">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4">
+    <div class="row border relative-products-parent br-bottom-2px br10 mt-4">
+        <div class="mt-4">
+            <span class="fs15 d-flex align-items-center fw600 icon-dark-color bb-red pb-2 mx-2">
+                <svg stroke="currentColor" class="text-digi-red" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16"
+                     height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12.055 5c0.283-0.201 0.555-0.425 0.804-0.674 0.522-0.522 0.871-1.164 0.983-1.808 0.123-0.706-0.057-1.362-0.494-1.798-0.348-0.348-0.82-0.533-1.365-0.533-0.775 0-1.593 0.372-2.242 1.021-1.039 1.039-1.644 2.472-1.97 3.496-0.241-1.028-0.722-2.416-1.657-3.351-0.501-0.501-1.142-0.759-1.748-0.759-0.495 0-0.965 0.172-1.317 0.523-0.781 0.781-0.675 2.153 0.236 3.064 0.325 0.325 0.705 0.595 1.105 0.819h-3.391v4h1v7h12v-7h1v-4h-2.945zM10.536 2.003c0.433-0.433 0.974-0.692 1.446-0.692 0.167 0 0.402 0.035 0.57 0.203 0.407 0.407 0.178 1.349-0.489 2.016-0.687 0.687-1.61 1.159-2.413 1.47h-0.792c0.29-0.899 0.813-2.132 1.678-2.997zM3.655 2.514c-0.011-0.143-0.001-0.41 0.191-0.601 0.16-0.16 0.372-0.194 0.521-0.194v0c0.332 0 0.679 0.157 0.952 0.429 0.529 0.529 0.965 1.371 1.26 2.436 0.008 0.029 0.016 0.057 0.023 0.086-0.028-0.008-0.057-0.015-0.086-0.023-1.064-0.295-1.906-0.731-2.436-1.26-0.247-0.247-0.403-0.565-0.426-0.872zM7 15h-4v-6.5h4v6.5zM7 8h-5v-2h5v2zM13 15h-4v-6.5h4v6.5zM14 8h-5v-2h5v2z"></path></svg>
+               <span class="me-2 mt-1"> کالاهای مشابه</span>
+
+            </span>
+            <div class="border-custom-bottom bg-digi-red mt-2"></div>
+
+            <div class="mt-5">
+                <div class="swiper mySwiper related-products-swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-rtl swiper-backface-hidden">
+                    <div class="swiper-wrapper" id="swiper-wrapper-ba808366910b72b86" aria-live="polite">
+                        <div class="swiper-slide pb-4 px-3 position-relative swiper-slide-active" role="group"
+                             aria-label="1 / 1" style="width: 240px; margin-left: 2px;">
+                            <div class="position-absolute" style="right: 0;top: 0">
+                                <img src="assets/image/text/spacial-sell.svg" width="50" height="15" class="" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <img src="assets/image/product/headphone.webp" class="" alt="">
+                            </div>
+                            <div class="fs14 lh2 fw600">
+                                هدفون بلوتوثی مدل idrand foure
+                            </div>
+                            <div class="text-danger fs12 mt-2">
+                                تنها ۱ عدد در انبار باقی مانده
+                            </div>
+                            <div class="mt-4 d-flex justify-content-between">
+                                <div class="discount-badge bg-digi-red br10 text-white fs12">۳٪</div>
+                                <div class="icon-dark-color fw600">
+                                    ۱,۹۳۹,۰۳۰
+                                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-secondary-2 fs13 px-4 pb-2 text-start mt-3 text-decoration-line-through">
+                                ۱,۹۳۹,۰۳۰
+                            </div>
+                        </div>
+
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4 mt-4">
+    <div class="offs-new-box br15 px-3 py-1">
+        <div class="row ">
+            <div class="col-6">
+                <div class="fw600 fw14 text-digi-red mt-4 pt-3">
+                    ۱۰ درصد تخفیف برای کالاهای ابزار سلامت دیجیتال تا سقف ۱۰ هزار تومان
+                </div>
+                <div class="mt-3 fs12 mt-2">
+                    کد تخفیف را در سبد خرید وارد کنید
+                </div>
+                <div class="mt-4 offs-less-box fs13 text-white bg-digi-red w-fit fw600">
+                    PA10
+                </div>
+                <div class="mt-4">
+                    <a href="" class="text-digi-red fs15 fw600">
+                        مشاهده کالا
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 bg-white br15">
+                <div class="row py-3">
+                    <div class="col-3 border-left-light">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3 border-left-light">
+                        <div class="d-flex h-100 align-items-center justify-content-center">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-2 px-0 border-left-light">
+                        <div class="border-bottom-light-2 p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                        <div class="p-1">
+                            <img src="assets/image/product/airpod.webp" width="100%" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container px-4">
+    <div class="row border relative-products-parent br-bottom-2px br10 mt-4">
+        <div class="mt-4">
+            <span class="fs15 d-flex align-items-center fw600 icon-dark-color bb-red pb-2 mx-2">
+                <svg stroke="currentColor" class="text-digi-red" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 16 16"
+                     height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path
+                        d="M12.055 5c0.283-0.201 0.555-0.425 0.804-0.674 0.522-0.522 0.871-1.164 0.983-1.808 0.123-0.706-0.057-1.362-0.494-1.798-0.348-0.348-0.82-0.533-1.365-0.533-0.775 0-1.593 0.372-2.242 1.021-1.039 1.039-1.644 2.472-1.97 3.496-0.241-1.028-0.722-2.416-1.657-3.351-0.501-0.501-1.142-0.759-1.748-0.759-0.495 0-0.965 0.172-1.317 0.523-0.781 0.781-0.675 2.153 0.236 3.064 0.325 0.325 0.705 0.595 1.105 0.819h-3.391v4h1v7h12v-7h1v-4h-2.945zM10.536 2.003c0.433-0.433 0.974-0.692 1.446-0.692 0.167 0 0.402 0.035 0.57 0.203 0.407 0.407 0.178 1.349-0.489 2.016-0.687 0.687-1.61 1.159-2.413 1.47h-0.792c0.29-0.899 0.813-2.132 1.678-2.997zM3.655 2.514c-0.011-0.143-0.001-0.41 0.191-0.601 0.16-0.16 0.372-0.194 0.521-0.194v0c0.332 0 0.679 0.157 0.952 0.429 0.529 0.529 0.965 1.371 1.26 2.436 0.008 0.029 0.016 0.057 0.023 0.086-0.028-0.008-0.057-0.015-0.086-0.023-1.064-0.295-1.906-0.731-2.436-1.26-0.247-0.247-0.403-0.565-0.426-0.872zM7 15h-4v-6.5h4v6.5zM7 8h-5v-2h5v2zM13 15h-4v-6.5h4v6.5zM14 8h-5v-2h5v2z"></path></svg>
+               <span class="me-2 mt-1"> کالاهای مشابه</span>
+
+            </span>
+            <div class="border-custom-bottom bg-digi-red mt-2"></div>
+
+            <div class="mt-5">
+                <div class="swiper mySwiper related-products-swiper swiper-initialized swiper-horizontal swiper-free-mode swiper-rtl swiper-backface-hidden">
+                    <div class="swiper-wrapper" aria-live="polite">
+                        <div class="swiper-slide pb-4 px-3 position-relative swiper-slide-active" role="group"
+                             aria-label="1 / 1" style="width: 240px; margin-left: 2px;">
+                            <div class="position-absolute" style="right: 0;top: 0">
+                                <img src="assets/image/text/spacial-sell.svg" width="50" height="15" class="" alt="">
+                            </div>
+                            <div class="mt-3">
+                                <img src="assets/image/product/headphone.webp" class="" alt="">
+                            </div>
+                            <div class="fs14 lh2 fw600">
+                                هدفون بلوتوثی مدل idrand foure
+                            </div>
+                            <div class="text-danger fs12 mt-2">
+                                تنها ۱ عدد در انبار باقی مانده
+                            </div>
+                            <div class="mt-4 d-flex justify-content-between">
+                                <div class="discount-badge bg-digi-red br10 text-white fs12">۳٪</div>
+                                <div class="icon-dark-color fw600">
+                                    ۱,۹۳۹,۰۳۰
+                                    <svg class="mr-2" width="17" height="17" viewBox="0 0 25 27" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.52917 11.5828C3.03731 11.5828 3.48194 11.502 3.86304 11.3403C4.2557 11.1786 4.58484 10.9592 4.85046 10.682C5.11608 10.4048 5.31818 10.0815 5.45677 9.71193C5.59535 9.35392 5.67619 8.97281 5.69929 8.5686H3.96698C3.378 8.5686 2.89295 8.50509 2.51184 8.37805C2.13074 8.25101 1.83047 8.06623 1.61105 7.82371C1.39162 7.58119 1.23571 7.29247 1.14332 6.95756C1.06248 6.6111 1.02206 6.22422 1.02206 5.79691C1.02206 5.35806 1.08558 4.94231 1.21261 4.54965C1.33965 4.157 1.52443 3.81053 1.76695 3.51027C2.00948 3.21 2.30974 2.97325 2.66775 2.80002C3.03731 2.61524 3.45884 2.52285 3.93234 2.52285C4.31344 2.52285 4.67723 2.58637 5.02369 2.71341C5.37015 2.84044 5.67619 3.04254 5.94181 3.31971C6.20743 3.58533 6.41531 3.93757 6.56544 4.37642C6.72712 4.80372 6.80797 5.32342 6.80797 5.9355V7.37331H8.47098C8.60956 7.37331 8.70195 7.42528 8.74815 7.52922C8.80589 7.62161 8.83476 7.76597 8.83476 7.9623C8.83476 8.17017 8.80589 8.32608 8.74815 8.43002C8.70195 8.52241 8.60956 8.5686 8.47098 8.5686H6.77332C6.75022 9.13449 6.63474 9.67151 6.42686 10.1796C6.23053 10.6878 5.95336 11.1324 5.59535 11.5135C5.23734 11.8946 4.81004 12.1949 4.31344 12.4143C3.81685 12.6453 3.25674 12.7608 2.63311 12.7608H0.796861L0.692923 11.5828H2.52917ZM2.09609 5.72762C2.09609 6.01634 2.12496 6.26464 2.18271 6.47251C2.252 6.68039 2.36171 6.85362 2.51184 6.9922C2.67353 7.11924 2.88718 7.2174 3.1528 7.2867C3.41842 7.34444 3.75333 7.37331 4.15754 7.37331H5.71661V6.07408C5.71661 5.21948 5.54916 4.6074 5.21424 4.23784C4.87933 3.86828 4.41738 3.6835 3.8284 3.6835C3.27406 3.6835 2.84676 3.86828 2.54649 4.23784C2.24622 4.6074 2.09609 5.10399 2.09609 5.72762ZM11.3338 7.37331C11.4839 7.37331 11.582 7.42528 11.6282 7.52922C11.686 7.62161 11.7149 7.76597 11.7149 7.9623C11.7149 8.17017 11.686 8.32608 11.6282 8.43002C11.582 8.52241 11.4839 8.5686 11.3338 8.5686H8.47545C8.32531 8.5686 8.22715 8.52241 8.18095 8.43002C8.12321 8.33763 8.09434 8.19327 8.09434 7.99694C8.09434 7.78907 8.12321 7.63316 8.18095 7.52922C8.22715 7.42528 8.32531 7.37331 8.47545 7.37331H11.3338ZM14.1927 7.37331C14.3429 7.37331 14.441 7.42528 14.4872 7.52922C14.545 7.62161 14.5738 7.76597 14.5738 7.9623C14.5738 8.17017 14.545 8.32608 14.4872 8.43002C14.441 8.52241 14.3429 8.5686 14.1927 8.5686H11.3344C11.1843 8.5686 11.0861 8.52241 11.0399 8.43002C10.9822 8.33763 10.9533 8.19327 10.9533 7.99694C10.9533 7.78907 10.9822 7.63316 11.0399 7.52922C11.0861 7.42528 11.1843 7.37331 11.3344 7.37331H14.1927ZM17.0517 7.37331C17.2019 7.37331 17.3 7.42528 17.3462 7.52922C17.404 7.62161 17.4328 7.76597 17.4328 7.9623C17.4328 8.17017 17.404 8.32608 17.3462 8.43002C17.3 8.52241 17.2019 8.5686 17.0517 8.5686H14.1934C14.0433 8.5686 13.9451 8.52241 13.8989 8.43002C13.8412 8.33763 13.8123 8.19327 13.8123 7.99694C13.8123 7.78907 13.8412 7.63316 13.8989 7.52922C13.9451 7.42528 14.0433 7.37331 14.1934 7.37331H17.0517ZM19.9107 7.37331C20.0608 7.37331 20.159 7.42528 20.2052 7.52922C20.2629 7.62161 20.2918 7.76597 20.2918 7.9623C20.2918 8.17017 20.2629 8.32608 20.2052 8.43002C20.159 8.52241 20.0608 8.5686 19.9107 8.5686H17.0524C16.9023 8.5686 16.8041 8.52241 16.7579 8.43002C16.7002 8.33763 16.6713 8.19327 16.6713 7.99694C16.6713 7.78907 16.7002 7.63316 16.7579 7.52922C16.8041 7.42528 16.9023 7.37331 17.0524 7.37331H19.9107ZM21.4705 7.37331C21.9209 7.37331 22.2789 7.25205 22.5445 7.00953C22.8217 6.767 22.9602 6.43209 22.9602 6.00479V3.61421H24.0862V6.00479C24.0862 6.82475 23.8553 7.45993 23.3933 7.91033C22.9429 8.34918 22.3251 8.5686 21.5397 8.5686H19.9114C19.7612 8.5686 19.6631 8.52241 19.6169 8.43002C19.5591 8.33763 19.5303 8.19327 19.5303 7.99694C19.5303 7.78907 19.5591 7.63316 19.6169 7.52922C19.6631 7.42528 19.7612 7.37331 19.9114 7.37331H21.4705ZM24.2595 1.39685H22.8736V0.166916H24.2595V1.39685ZM22.0594 1.39685H20.6736V0.166916H22.0594V1.39685ZM10.2553 22.2221C10.2553 22.8458 10.1571 23.429 9.96076 23.9718C9.76444 24.5261 9.48149 25.0054 9.11193 25.4096C8.74237 25.8253 8.29197 26.1545 7.76073 26.397C7.24104 26.6395 6.65206 26.7608 5.99378 26.7608H4.97172C3.67826 26.7608 2.67353 26.3624 1.95751 25.5655C1.24149 24.7686 0.883476 23.6773 0.883476 22.2914V19.2599H1.99215V22.2568C1.99215 22.7534 2.0499 23.2038 2.16538 23.608C2.29242 24.0122 2.48297 24.3587 2.73704 24.6474C3.00267 24.9476 3.3318 25.1786 3.72446 25.3403C4.11712 25.502 4.59061 25.5828 5.14495 25.5828H5.90717C6.44996 25.5828 6.92345 25.4904 7.32766 25.3056C7.73186 25.1324 8.06678 24.8957 8.3324 24.5954C8.60956 24.2951 8.81167 23.9429 8.9387 23.5387C9.07729 23.1345 9.14658 22.713 9.14658 22.2741V17.6142H10.2553V22.2221ZM6.0804 17.2331H4.62526V15.9685H6.0804V17.2331ZM14.7322 22.5686C14.4319 22.5686 14.1432 22.5282 13.866 22.4473C13.5889 22.355 13.3406 22.2048 13.1211 21.9969C12.9133 21.7891 12.7458 21.5177 12.6188 21.1828C12.4917 20.8363 12.4282 20.409 12.4282 19.9009V11.8283H13.5542V19.693C13.5542 20.178 13.6582 20.5822 13.866 20.9056C14.0855 21.2174 14.4377 21.3733 14.9227 21.3733H15.2172C15.4713 21.3733 15.5983 21.5696 15.5983 21.9623C15.5983 22.3665 15.4713 22.5686 15.2172 22.5686H14.7322ZM15.5025 21.3733C15.9529 21.3733 16.2936 21.2636 16.5246 21.0442C16.7556 20.8247 16.871 20.5303 16.871 20.1607V19.5024C16.871 18.4977 17.1251 17.7124 17.6333 17.1465C18.1529 16.5806 18.869 16.2977 19.7813 16.2977C20.2548 16.2977 20.6706 16.3727 21.0286 16.5229C21.3866 16.673 21.6811 16.8866 21.9121 17.1638C22.1546 17.441 22.3336 17.7701 22.4491 18.1512C22.5646 18.5323 22.6223 18.9539 22.6223 19.4158C22.6223 20.409 22.3625 21.1828 21.8428 21.7371C21.3231 22.2914 20.6128 22.5686 19.712 22.5686C19.2501 22.5686 18.8055 22.482 18.3781 22.3088C17.9508 22.124 17.6159 21.8006 17.3734 21.3387C17.2695 21.6043 17.1424 21.8179 16.9923 21.9796C16.8422 22.1413 16.6863 22.2683 16.5246 22.3607C16.3629 22.4416 16.1897 22.4993 16.0049 22.534C15.8317 22.5571 15.6642 22.5686 15.5025 22.5686H15.2254C15.0752 22.5686 14.9771 22.5224 14.9309 22.43C14.8731 22.3376 14.8442 22.1933 14.8442 21.9969C14.8442 21.7891 14.8731 21.6332 14.9309 21.5292C14.9771 21.4253 15.0752 21.3733 15.2254 21.3733H15.5025ZM21.5136 19.5197C21.5136 18.9192 21.3808 18.4342 21.1152 18.0646C20.8496 17.6835 20.3934 17.4929 19.7467 17.4929C18.5456 17.4929 17.9451 18.1916 17.9451 19.589C17.9451 20.178 18.1068 20.6226 18.4301 20.9229C18.765 21.2232 19.1923 21.3733 19.712 21.3733C20.301 21.3733 20.7456 21.2116 21.0459 20.8883C21.3577 20.5649 21.5136 20.1087 21.5136 19.5197Z"
+                                              fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="text-secondary-2 fs13 px-4 pb-2 text-start mt-3 text-decoration-line-through">
+                                ۱,۹۳۹,۰۳۰
+                            </div>
+                        </div>
+
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="main-footer mt-5">
+    <div class="container px-4 pb-4">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img src="assets/image/logo/digi.svg" height="30" alt="">
+                <div class="mt-3">
+                    <span class="ms-3 fs12 icon-dark-color">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</span>
+                    <span>|</span>
+                    <span class="me-3 fs12 icon-dark-color">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
+                </div>
+            </div>
+            <div class="d-none d-md-block">
+                <button class="footer-back-to-up-btn bg-transparent fs12">
+                    <span class="ms-1">بازگشت به بالا</span>
+                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+                         stroke-linejoin="round" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <img src="assets/image/footer/express-delivery.svg" width="56" height="56" alt="">
+                <div class="fs12 icon-dark-color">
+                    امکان تحویل اکسپرس
+                </div>
+            </div>
+            <div class="col text-center">
+                <img src="assets/image/footer/express-delivery.svg" width="56" height="56" alt="">
+                <div class="fs12 icon-dark-color">
+                    امکان تحویل اکسپرس
+                </div>
+            </div>
+            <div class="col text-center">
+                <img src="assets/image/footer/express-delivery.svg" width="56" height="56" alt="">
+                <div class="fs12 icon-dark-color">
+                    امکان تحویل اکسپرس
+                </div>
+            </div>
+            <div class="col text-center d-none d-md-block">
+                <img src="assets/image/footer/express-delivery.svg" width="56" height="56" alt="">
+                <div class="fs12 icon-dark-color">
+                    امکان تحویل اکسپرس
+                </div>
+            </div>
+            <div class="col text-center d-none d-md-block">
+                <img src="assets/image/footer/express-delivery.svg" width="56" height="56" alt="">
+                <div class="fs12 icon-dark-color">
+                    امکان تحویل اکسپرس
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 pt-2">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="fw600">
+                    با دیجی‌کالا
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="fw600">
+                    با دیجی‌کالا
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+                <div class="fw600">
+                    با دیجی‌کالا
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                        <li><a href="">
+                            گزینه 1
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="fw600 icon-dark-color">
+                    همراه ما باشید!
+                </div>
+
+                <div class="d-flex mt-4">
+                    <svg stroke="currentColor" class="text-secondary-2 ms-4 me-2" fill="none" stroke-width="2"
+                         viewBox="0 0 24 24"
+                         stroke-linecap="round" stroke-linejoin="round" height="33" width="33"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    <svg stroke="currentColor" class="text-secondary-2 mx-4" fill="currentColor" stroke-width="0"
+                         viewBox="0 0 16 16" height="33" width="33" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                    </svg>
+                    <svg stroke="currentColor" class="text-secondary-2 mx-4" fill="currentColor" stroke-width="0"
+                         viewBox="0 0 1024 1024" height="33" width="33" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"></path>
+                    </svg>
+                    <svg stroke="currentColor" class="text-secondary-2 mx-4" fill="currentColor" stroke-width="0"
+                         role="img" viewBox="0 0 24 24" height="33" width="33" xmlns="http://www.w3.org/2000/svg">
+                        <title></title>
+                        <path d="M12.0014 1.5938C2.7317 1.5906-1.9119 12.7965 4.641 19.3515c2.975 2.976 7.4496 3.8669 11.3374 2.257 3.8877-1.61 6.4228-5.4036 6.4228-9.6116 0-5.7441-4.6555-10.4012-10.3997-10.4031zM6.11 6.783c.5011-2.5982 3.8927-3.2936 5.376-1.1028 1.4834 2.1907-.4216 5.0816-3.02 4.5822-1.6118-.3098-2.6668-1.868-2.356-3.4794zm4.322 8.9882c-.5045 2.5971-3.8965 3.288-5.377 1.0959-1.4807-2.1922.427-5.0807 3.0247-4.5789 1.612.3114 2.6655 1.8714 2.3524 3.483zm1.2605-2.405c-1.1528-.2231-1.4625-1.7273-.4917-2.3877.9708-.6604 2.256.18 2.0401 1.3343-.1347.7198-.8294 1.1924-1.5484 1.0533zm6.197 3.8375c-.501 2.5981-3.8927 3.2935-5.376 1.1028-1.4834-2.1908.4217-5.0817 3.0201-4.5822 1.6117.3097 2.6667 1.8679 2.356 3.4794zm-1.9662-5.5018c-2.5981-.501-3.2935-3.8962-1.1027-5.3795 2.1907-1.4834 5.0816.4216 4.5822 3.02-.3082 1.6132-1.8668 2.6701-3.4795 2.3595zm-2.3348 11.5618l2.2646.611c1.9827.5263 4.0167-.6542 4.5433-2.6368l.639-2.4016a11.3828 11.3828 0 0 1-7.4469 4.4274zM21.232 3.5985l-2.363-.6284a11.3757 11.3757 0 0 1 4.3538 7.619l.6495-2.4578c.5194-1.9804-.6615-4.0076-2.6403-4.5328zM.6713 13.8086l-.5407 2.04c-.5263 1.9826.6542 4.0166 2.6368 4.5432l2.1066.5618a11.3792 11.3792 0 0 1-4.2027-7.145zM10.3583.702L8.1498.1261C6.166-.4024 4.1296.7785 3.603 2.763l-.5512 2.082A11.3757 11.3757 0 0 1 10.3583.702Z"></path>
+                    </svg>
+                </div>
+                <div class="mt-4 pt-3">
+                    <span class="icon-dark-color fs15 fw600">با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید</span>
+                </div>
+                <div class="d-flex mt-4">
+                    <div>
+                        <input type="text" class="news-input pe-3 ps-5" placeholder="ایمیل شما">
+                    </div>
+                    <div>
+                        <button class="btn text-white news-footer-btn me-2 br7">
+                            ثبت
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--application download-->
+        <div class="row mt-5 application-download-box br10 p-3">
+            <div class="col-12 col-lg-5">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <img src="assets/image/logo/footerlogo2.webp" width="44" height="44" alt="">
+                    <h5 class="text-white me-3 mt-1">
+                        دانلود اپلیکیشن دیجی‌کالا
+                    </h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7 text-center text-lg-start">
+
+
+                <img src="assets/image/footer/sib-app.svg" height="45" width="160"
+                     class="mx-1 mt-4 mt-lg-0 object-cover" alt="">
+                <img src="assets/image/footer/myket.svg" height="45" width="160" class="mx-1  mt-4 mt-lg-0 object-cover"
+                     alt="">
+                <img src="assets/image/footer/coffe-bazzar.svg" height="45" width="160"
+                     class="mx-1 mt-3 mt-lg-0 object-cover" alt="">
+
+            </div>
+        </div>
+        <!--footer description-->
+        <div class="row mt-5 main-footer pt-5">
+            <div class="col-12 col-xl-8">
+                <h5 class="icon-dark-color fw600">
+                    فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+                </h5>
+                <div class="text-secondary fs12 lh2">
+                    یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت مناسب را
+                    در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛ ویژگی‌هایی که
+                    فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق مشتریان ثابت خود را
+                    داشته باشد.
+
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-4 mt-xl-0">
+                <div class="d-flex justify-content-center justify-content-md-end">
+                    <div class="border p-3 br7">
+                        <img src="assets/image/footer/rezi.webp" width="80" height="80" alt="">
+                    </div>
+                    <div class="border p-3 br7 me-2">
+                        <img src="assets/image/footer/rezi.webp" width="80" height="80" alt="">
+                    </div>
+                    <div class="border p-3 br7 me-2">
+                        <img src="assets/image/footer/rezi.webp" width="80" height="80" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--copy right-->
+        <div class="row main-footer mt-5 pt-4">
+            <div class="fs12 text-secondary text-center lh2">
+                برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز
+                برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="assets/js/bootstrap.min.js"></script>
+<!--swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    var swiper2 = new Swiper(".related-products-swiper", {
+        slidesPerView: 6.8,
+        spaceBetween: 2,
+        freeMode: true,
+        breakpoints: {
+            '480': {
+                slidesPerView: 2.5,
+            },
+            '576': {
+                slidesPerView: 2.5,
+            },
+            '768': {
+                slidesPerView: 4,
+
+            },
+            '992': {
+                slidesPerView: 5,
+            },
+            '1050': {
+                slidesPerView: 6,
+            },
+            '1200': {
+                slidesPerView: 6,
+            },
+        },
+    });
+</script>
+
+</body>
+</html>
