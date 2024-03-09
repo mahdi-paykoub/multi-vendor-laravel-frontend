@@ -1,0 +1,11 @@
+.input-for-off{
+    height: 45px;
+    border-radius: 7px;
+    border: 1px solid #cccccc;
+}
+.input-for-off::placeholder{
+    color: #9d9d9d;
+}
+.input-for-off:focus{
+    border-color: #20c7e8;
+}
