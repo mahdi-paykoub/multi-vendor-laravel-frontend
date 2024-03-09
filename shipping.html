@@ -15,9 +15,9 @@
 </head>
 <body>
 
-<div class="container px-4 px-lg-5">
-    <div class="row br10 border-responsive p-3 mt-4 text-center position-relative">
-        <div class="fw600 d-flex align-items-center position-absolute link-top-right">
+<div class="container px-lg-5">
+    <div class="row br10 border-responsive p-3 mt-lg-4 text-center position-relative">
+        <div class="fw600 align-items-center position-absolute link-top-right d-none d-lg-flex">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
                  width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
@@ -25,10 +25,11 @@
             <div class="fs15 me-2"> آدرس و زمان ارسال</div>
         </div>
         <img src="assets/image/logo/digi-farsi.svg" height="24" alt="">
+        <div class="d-lg-none mt-3 bb-8px"></div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-9">
+    <div class="row mt-lg-4">
+        <div class="col-12 col-lg-9">
             <div class="border-responsive p-3 br10">
                 <div class="fs13 text-secondary-2 me-4">آدرس تحویل سفارش</div>
                 <div class="d-flex mt-3 align-items-center">
@@ -78,6 +79,7 @@
                     <img src="assets/image/product/notebook.jpg" width="90" height="90" alt="">
                 </div>
             </div>
+            <div class="d-lg-none bb-8px"></div>
             <div class="mt-3 border-responsive p-4 br10">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="fw600">
@@ -85,7 +87,8 @@
                     </div>
                     <div class="text-info cursor-pointer">
                         اضافه کنید
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                             height="1em"
                              width="1em" xmlns="http://www.w3.org/2000/svg">
                             <path d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"></path>
                         </svg>
@@ -93,15 +96,17 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-6 position-relative">
+                    <div class="col-12 col-lg-6 position-relative">
                         <input type="text" class="input-for-off w-100 px-3" placeholder="اینجا بنویسید">
-                        <button class="border-0 position-absolute bg-transparent fs14 text-secondary" style="top: 13px;left: 22px">ثبت</button>
+                        <button class="border-0 position-absolute bg-transparent fs14 text-secondary"
+                                style="top: 13px;left: 22px">ثبت
+                        </button>
                     </div>
                 </div>
 
             </div>
-
-            <div class="mt-3 border-responsive p-4 br10 d-flex align-items-center">
+            <div class="d-lg-none bb-8px"></div>
+            <div class="mt-3 border-responsive p-4 br10 d-flex align-items-center mb-lg-5">
                 <svg stroke="currentColor" fill="currentColor" class="text-secondary" stroke-width="0"
                      viewBox="0 0 24 24" height="1em"
                      width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +120,8 @@
             </div>
 
         </div>
-        <div class="col-3">
+        <div class="col-12 col-lg-3">
+            <div class="d-lg-none mt-3 bb-8px"></div>
             <div class="border-responsive p-3 br10">
                 <div class="d-flex justify-content-between border-bottom pb-3">
                     <div class="fs13 text-secondary">
@@ -157,7 +163,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn">ثبت سفارش</button>
+                    <button class="btn mt-4 btn btn-danger bg-digi-red w-100 br7 btn-padding-2">پرداخت</button>
                 </div>
             </div>
         </div>
@@ -165,14 +171,6 @@
     </div>
 </div>
 
-
-<script>
-    window.addEventListener("scroll", function () {
-        if (window.scrollY >= 100) {
-
-        }
-    });
-</script>
 
 </body>
 </html>

@@ -9,3 +9,6 @@
 .input-for-off:focus{
     border-color: #20c7e8;
 }
+.bb-8px{
+    border-bottom: 8px solid #f0f0f1;
+}
