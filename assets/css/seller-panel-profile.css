@@ -23,3 +23,9 @@ body {
     color: #1ab1d4;
     font-weight: 600;
 }
+.status-box{
+    background-color: #d1edfd;
+    color: #479ff0;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
