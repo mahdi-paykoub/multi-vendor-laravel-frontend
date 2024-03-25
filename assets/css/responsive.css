@@ -115,6 +115,9 @@
     .border-responsive-width{
         width: 70%;
     }
+    .w-res-25{
+        width: 100%;
+    }
 }
 
 @media (min-width: 576px) {
@@ -232,6 +235,9 @@
     }
     .border-responsive-width{
         width: 70%;
+    }
+    .w-res-25{
+        width: 100%;
     }
 }
 
@@ -409,6 +415,9 @@
         width: 60%;
     }
 
+    .w-res-25{
+        width: 25%;
+    }
 }
 
 @media (min-width: 1200px) {
