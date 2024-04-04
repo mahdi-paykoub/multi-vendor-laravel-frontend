@@ -118,6 +118,13 @@
     .w-res-25{
         width: 100%;
     }
+    .compare-product-image{
+        width: 100px;
+        height: 100px;
+    }
+    .compare-product-title{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -239,6 +246,13 @@
     .w-res-25{
         width: 100%;
     }
+    .compare-product-image{
+        width: 100px;
+        height: 100px;
+    }
+    .compare-product-title{
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -351,7 +365,13 @@
     .border-responsive-width{
         width: 75%;
     }
-
+    .compare-product-image{
+        width: 150px;
+        height: 150px;
+    }
+    .compare-product-title{
+        font-size: 14px;
+    }
 }
 
 
